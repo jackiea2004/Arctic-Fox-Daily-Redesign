@@ -1,0 +1,539 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+    background-color: #eaeaea;
+    margin: 0;
+    color: #2d2727;
+}
+
+/* Home page */
+#homepage-container {
+    width: 85%;
+    margin: 20px auto;
+}
+/* Text */
+h1,h2,h3,nav {
+    font-family: "Oswald", sans-serif;
+}
+
+h1{
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: #db5f27;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 25px;
+}
+
+main h2 {
+    font-size: 43px;
+    text-align: center;
+    background-color: #db5f27;
+    border-radius: 20px;
+    color: #2d2727;
+}
+
+main{
+    line-height: 1.6;
+}
+
+h3{
+    font-size: 30px;
+}
+
+/* Images */
+.logo{
+    width: 200px;
+    margin-right: 40px;
+}
+
+.icon {
+    width: 80px;
+}
+
+.home-images img{
+    border-radius: 200px;
+    width: 350px;
+    border: solid 10px #db5f27;
+}
+
+/* Header and Nav */
+header{
+    background-color: #2d2727;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    margin-right: 40px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color: #eaeaea;
+    text-decoration: none;
+    
+}
+
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+    color: #9f909a;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+/* button appearance */
+nav ul li a {
+    display: block;
+    border: 3px solid #db5f27;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin: 10px 20px;
+}
+
+/* Rescue Mission Info */
+.rescue-mission{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f9f7;
+    box-shadow: 0 0 10px #2d2727;
+    color: #2d2727;
+    border-radius: 10px;
+}
+.rescue-mission img{
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    border: solid 10px #db5f27;
+}
+
+.rescue-mission .text{
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.rescue-mission h3 {
+    font-weight: 400;
+}
+
+.rescue-mission span{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* About Kimberly and the Company */
+.kimberly{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f3f9f7;
+    box-shadow: 0 0 10px #2d2727;
+    color: #2d2727;
+    border-radius: 10px;
+}
+
+.kimberly img{
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    border: solid 10px #db5f27;
+}
+
+.kimberly .text{
+    margin-left: 20px;
+    padding: 20px;
+}
+
+/* Donate, Patreon, Merch Buttons */
+.help {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f3f9f7;
+    box-shadow: 0 0 10px #2d2727;
+    border-radius: 10px;
+}
+
+.help-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    padding: 20px;
+    background-color: #265f3f;
+    border: dashed 6px #db5f27;
+    border-radius: 20px;
+    width: 30%;
+    margin-bottom: 40px;
+    color: #eaeaea;
+}
+
+.button a{
+    color: #eaeaea;
+    font-size: 40px;
+}
+
+.button a:hover{
+    color: #f3f9f7;
+}
+
+.home-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #265f3f;
+    color: #f3f9f7;
+}
+
+footer h2{
+    font-size: 30px;
+}
+
+footer div{
+    flex: 1;
+    text-align: center;
+}
+
+.socials a{
+    margin: 10px;
+}
+
+.footer-nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav ul li{
+    margin: 5px;
+}
+
+.footer-nav ul li a{
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.footer-logo{
+    width: 200px;
+}
+
+.contact-info a{
+    color: #f3f9f7;
+}
+
+/* Need Help with an Animal Page */
+#help-container{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.left img{
+    width: 500px;
+    border-radius: 20px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    color: #eaeaea;
+}
+
+.help-button {
+    padding: 10px 20px 50px 20px;
+    text-align: center;
+    background-color: #265f3f;
+    margin: 10px 0px 10px 0px;
+    border: dashed 6px #db5f27;
+    border-radius: 20px;
+}
+.help-button a {
+    color: #eaeaea;
+}
+
+.help-button a:hover {
+    color: #9f909a;
+}
+
+.help-button h3{
+    font-size: 40px;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right p {
+    font-size: 28px;
+}
+
+.note {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.info a, .how-it-works {
+    font-weight: 600;
+    font-size: 30px;
+    color: #2d2727;
+}
+
+.info a:hover{
+    color: #db5f27;
+}
+
+.info {
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f9f7;
+    box-shadow: 0 0 10px #2d2727;
+    color: #2d2727;
+    border-radius: 20px;
+}
+
+/* Residents Page */
+#residents-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resident{
+    padding: 40px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 10px #9f909a;
+    border-radius: 20px;
+    background-color: #2d2727;
+    color: #eaeaea;
+    font-weight: 500;
+}
+
+.name{
+    text-align: center;
+    font-size: 40px;
+}
+
+.lead-socials{
+    background-color: #db5f27;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.title{
+    font-size: 45px;
+    background-color: #265f3f;
+    margin: 0;
+    border-radius: 20px;
+    color: #f3f9f7;
+}
+
+#residents-container img {
+    width: 350px;
+    border-radius: 50%;
+    border: solid 10px #db5f27;
+}
+
+.siva-finn{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+/* Sponsor a Resident Animal Page */
+#sponsor-container{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+#sponsor-container ul li{
+    font-size: 25px;
+    
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.box{
+    width: 50%;
+    padding: 30px;
+    background-color: #f3f9f7;
+    box-shadow: 0 0 10px #2d2727;
+    color: #2d2727;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.box2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f3f9f7;
+    box-shadow: 0 0 10px #2d2727;
+    color: #2d2727;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.box2 .text h3{
+    font-size: 30px;
+}
+
+.box2 img{
+    width: 400px;
+    height: auto;
+}
+
+.text{
+    text-align: center;
+    padding: 0px 10px;
+}
+
+ form label{
+    font-size: 23px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form{
+    background-color: #265f3f;
+    box-shadow: 0 0 10px #2d2727;
+    color: #f3f9f7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 30px;
+    width: 50%;
+}
+
+form h3{
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 37px;
+}
+
+form input, form select, form textarea{
+    padding: 10px;
+    border: 1px solid #9f909a;
+    width: 95%;
+    display: block;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form input[type="checkbox"]{
+    width: auto;
+    margin: 20px 10px;
+    transform: scale(2);
+}
+
+form button{
+    font-size: 25px;
+    background-color: #db5f26;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 10px;
+    color: #eaeaea;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+}
+
+form button:hover{
+    background-color: #9f909a;
+    cursor: pointer;
+}
+form fieldset{
+    border: none;
+}
+
+.form-donate{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.donation-info{
+    width: 75%;
+    margin-left: 40px;
+    text-align: center;
+    background-color: #f3f9f7;
+    box-shadow: 0 0 10px #2d2727;
+    color: #2d2727;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.thanks, .address{
+    font-weight: bold;
+    font-size: 27px;
+}
